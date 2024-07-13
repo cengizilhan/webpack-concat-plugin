@@ -1,13 +1,13 @@
 const path = require('path');
 const Terser = require('terser');
 
-class webpackConcatPlugin {
+class webpackConcatjsPlugin {
   constructor(options) {
     this.options = Array.isArray(options) ? options : [options];
   }
 
   apply(compiler) {
-    compiler.hooks.emit.tapAsync('webpackConcatPlugin', async (compilation, callback) => {
+    compiler.hooks.emit.tapAsync('webpackConcatjsPlugin', async (compilation, callback) => {
       try {
         for (const config of this.options) {
           const { src, dist, minify } = config;
@@ -39,11 +39,11 @@ class webpackConcatPlugin {
 
         callback();
       } catch (err) {
-        compilation.errors.push(new Error('webpackConcatPlugin: ' + err.message));
+        compilation.errors.push(new Error('webpackConcatjsPlugin: ' + err.message));
         callback();
       }
     });
   }
 }
 
-module.exports = webpackConcatPlugin;
+module.exports = webpackConcatjsPlugin;
