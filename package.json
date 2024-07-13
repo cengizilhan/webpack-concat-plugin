@@ -1,0 +1,32 @@
+{
+  "name": "webpack-concat-plugin",
+  "version": "1.0.0",
+  "description": "A custom Webpack plugin to concatenate and optionally minify files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/webpack-concat-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "concat",
+    "copy",
+    "minify",
+    "front-end",
+    "javascript",
+    "back-end"
+  ],
+  "author": "cengiz ilhan info.cengizilhan@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cengizilhan/webpack-concat-plugin/issues"
+  },
+  "homepage": "https://github.com/cengizilhan/webpack-concat-plugin#readme",
+  "dependencies": {
+    "terser": "^5.31.2"
+  }
+}
